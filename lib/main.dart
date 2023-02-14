@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     var settingsProvider = Provider.of<SettingsProvider>(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
       themeMode: settingsProvider.currentTheme,
